@@ -41,6 +41,12 @@ export function quoteMessage(items:QuoteItem[],location:string) {
  const rows=items.map(i=>{const p=products.find(p=>p.id===i.id);return p?`• ${p.name} — ${i.quantity} box${i.quantity===1?'':'es'} (${p.pack})`:''}).filter(Boolean);
  return `Hello Himalayan Eco Packaging!\nI'd like a wholesale quote for:\n${rows.join('\n')}\n\nDelivery location: ${valid}\nPlease share bulk pricing and availability.`;
 }
-// Recipient remains unset until the business supplies its WhatsApp number.
-export const businessWhatsAppNumber='';
-export function whatsappUrl(message:string) {return `https://wa.me/${businessWhatsAppNumber}?text=${encodeURIComponent(z.string().max(12000).parse(message))}`;}
+// Business WhatsApp recipient supplied by the owner: +91 7310710532.
+export const businessWhatsAppNumber='917310710532';
+export const businessWhatsAppDisplay='+91 73107 10532';
+export const generalEnquiryMessage='Hello Himalayan Eco Packaging! I would like to enquire about wholesale packaging.';
+export function whatsappUrl(message:string) {
+ const text=z.string().min(1).max(12000).parse(message);
+ if(!/^\d{10,15}$/.test(businessWhatsAppNumber))throw new Error('Business WhatsApp recipient is not a valid number');
+ return `https://wa.me/${businessWhatsAppNumber}?text=${encodeURIComponent(text)}`;
+}
