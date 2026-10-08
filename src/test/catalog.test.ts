@@ -1,5 +1,5 @@
 import { describe,it,expect } from 'vitest';
-import { products,filterProducts,updateQuote,quoteMessage,wholesalePolicy,requestSchema } from '@/lib/catalog';
+import { products,filterProducts,updateQuote,quoteMessage,wholesalePolicy,requestSchema,whatsappUrl,businessWhatsAppNumber,businessWhatsAppDisplay } from '@/lib/catalog';
 describe('Wholesale catalog rules',()=>{
  it('includes all 57 products in the six specified categories',()=>{expect(products).toHaveLength(57);expect([1,2,3,4,5,6].map(c=>products.filter(p=>p.category===c).length)).toEqual([12,9,9,15,6,6]);});
  it('uses the specified 500-piece pack for 650ml bagasse bowls',()=>{expect(products.find(p=>p.name.startsWith('650ml Round Bagasse'))?.pack).toBe('Pack of 500 pcs');});
@@ -10,4 +10,5 @@ describe('Wholesale catalog rules',()=>{
  it('sets 24–48 hour local delivery',()=>{expect([wholesalePolicy.deliveryMinHours,wholesalePolicy.deliveryMaxHours]).toEqual([24,48]);});
  it('sets 100 percent payment on delivery',()=>{expect(wholesalePolicy.paymentOnDeliveryPercent).toBe(100);});
  it('requires outlet name and location for samples',()=>{expect(requestSchema.safeParse({outlet:'',location:'Roorkee'}).success).toBe(false);expect(requestSchema.safeParse({outlet:'Cafe',location:''}).success).toBe(false);});
+ it('routes every WhatsApp action to the owner-supplied business number',()=>{expect(businessWhatsAppNumber).toBe('917310710532');expect(businessWhatsAppDisplay).toBe('+91 73107 10532');expect(whatsappUrl('Hello')).toBe('https://wa.me/917310710532?text=Hello');expect(whatsappUrl(quoteMessage([{id:'p1',quantity:3}],'Haridwar'))).toContain('https://wa.me/917310710532?text=');});
 });

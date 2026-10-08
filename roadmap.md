@@ -3,4 +3,4 @@
 - [x] Include all 57 catalog products, filters and responsive navigation.
 - [x] Build quote drawer, quantities, WhatsApp message export and sample request form.
 - [x] Verify quote rules and mobile/desktop presentation.
-- [ ] Connect direct WhatsApp recipient — blocked on business WhatsApp number.
+- [x] Connect direct WhatsApp recipient to +91 7310710532.
