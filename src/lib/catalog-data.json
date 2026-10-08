@@ -1,0 +1,344 @@
+[
+  {
+    "id": "p1",
+    "name": "250ml Bagasse Portion Bowl with Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p2",
+    "name": "500ml Round Bagasse Meal Bowl with Airtight Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p3",
+    "name": "650ml Round Bagasse Meal Bowl with Airtight Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p4",
+    "name": "750ml Round Bagasse Meal Bowl with Airtight Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p5",
+    "name": "1000ml Large Bagasse Round Meal Tub with Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p6",
+    "name": "500ml Rectangular Bagasse Meal Prep Box with Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p7",
+    "name": "750ml Rectangular Bagasse Meal Prep Box with Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p8",
+    "name": "6x6-Inch Sugarcane Bagasse Burger Clamshell Box",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p9",
+    "name": "9x6-Inch Large Snack & Wrap Clamshell Box",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p10",
+    "name": "3-Compartment Bagasse Meal Thali Tray with Clear/Bagasse Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p11",
+    "name": "4-Compartment Bagasse Executive Lunch Tray with Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p12",
+    "name": "5-Compartment Bagasse Banquet Thali Tray with Lid",
+    "category": 1,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p13",
+    "name": "Open Kraft Paper Food Boat Trays - Small & Medium",
+    "category": 2,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p14",
+    "name": "Foldable Kraft Snack Box with Tuck Flaps",
+    "category": 2,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p15",
+    "name": "500ml Kraft Round Salad Bowl with Clear Bio-Lid",
+    "category": 2,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p16",
+    "name": "750ml Kraft Round Salad Bowl with Clear Bio-Lid",
+    "category": 2,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p17",
+    "name": "1000ml Kraft Round Salad Bowl with Clear Bio-Lid",
+    "category": 2,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p18",
+    "name": "Chinese Noodle Pail / Takeaway Box with Handle",
+    "category": 2,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p19",
+    "name": "Triangular Sandwich Wedge Box with Window",
+    "category": 2,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p20",
+    "name": "Kraft Shawarma & Roll Sleeves",
+    "category": 2,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p21",
+    "name": "Greaseproof Butter Paper Wrapping Sheets",
+    "category": 2,
+    "pack": "Bundle of 1,000 sheets"
+  },
+  {
+    "id": "p22",
+    "name": "Large Saree & Lehenga Corrugated Hamper Box (18x13x3 Inch)",
+    "category": 3,
+    "pack": "Pack of 50 pcs"
+  },
+  {
+    "id": "p23",
+    "name": "Flat-Lay Shirt & Suit Kraft Hamper Box (12.5x10x2.5 Inch)",
+    "category": 3,
+    "pack": "Pack of 50 pcs"
+  },
+  {
+    "id": "p24",
+    "name": "Kurti & Dress Material Corrugated Box (12x10x3 Inch)",
+    "category": 3,
+    "pack": "Pack of 50 pcs"
+  },
+  {
+    "id": "p25",
+    "name": "Deep Gift Hamper Box for Multi-Item Combos (10.5x8x4 Inch)",
+    "category": 3,
+    "pack": "Pack of 50 pcs"
+  },
+  {
+    "id": "p26",
+    "name": "Square Cosmetic & Garment Gift Box (8x8x4.5 Inch)",
+    "category": 3,
+    "pack": "Pack of 50 pcs"
+  },
+  {
+    "id": "p27",
+    "name": "Luxury Collapsible Cardboard Box with Ribbon Closure",
+    "category": 3,
+    "pack": "Pack of 25 pcs"
+  },
+  {
+    "id": "p28",
+    "name": "Multipurpose Decorative Folding Net Hamper Tray",
+    "category": 3,
+    "pack": "Pack of 50 pcs"
+  },
+  {
+    "id": "p29",
+    "name": "Window Cake & Bakery Box (0.5 kg & 1 kg sizes)",
+    "category": 3,
+    "pack": "Pack of 100 pcs"
+  },
+  {
+    "id": "p30",
+    "name": "4-Grid & 6-Grid Sweet (Mithai) & Dry Fruit Partition Box",
+    "category": 3,
+    "pack": "Pack of 100 pcs"
+  },
+  {
+    "id": "p31",
+    "name": "250ml Clear Round PP Plastic Container with Snap Lid",
+    "category": 4,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p32",
+    "name": "500ml Clear Round PP Plastic Container with Snap Lid",
+    "category": 4,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p33",
+    "name": "750ml Clear Round PP Plastic Container with Snap Lid",
+    "category": 4,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p34",
+    "name": "1000ml Clear Round PP Plastic Container with Snap Lid",
+    "category": 4,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p35",
+    "name": "Black Base Microwave Bento Meal Box with Clear Lid - 650ml & 750ml",
+    "category": 4,
+    "pack": "Pack of 250 pcs"
+  },
+  {
+    "id": "p36",
+    "name": "2-Compartment & 3-Compartment Black Bento Box with Clear Lid",
+    "category": 4,
+    "pack": "Pack of 250 pcs"
+  },
+  {
+    "id": "p37",
+    "name": "Silver Foil Paper Plates - 8 Inch, 10 Inch & 12 Inch",
+    "category": 4,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p38",
+    "name": "4-Compartment & 5-Compartment Silver Paper Thalis",
+    "category": 4,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p39",
+    "name": "Silver Dona / Paper Chaat Bowls - 4 Inch & 5 Inch",
+    "category": 4,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p40",
+    "name": "200ml & 300ml Clear PP Drink / Lassi Cups with Dome Lids",
+    "category": 4,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p41",
+    "name": "Standard 65ml & 110ml Wax Paper Chai & Coffee Cups",
+    "category": 4,
+    "pack": "Pack of 2,000 pcs"
+  },
+  {
+    "id": "p42",
+    "name": "White Plastic Spoons & Chinese Soup Spoons",
+    "category": 4,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p43",
+    "name": "Commercial Heavy Aluminium Foil Roll (72 meters)",
+    "category": 4,
+    "pack": "Single / Case of 12"
+  },
+  {
+    "id": "p44",
+    "name": "Food-Grade Cling Film Stretch Wrap Roll",
+    "category": 4,
+    "pack": "Single / Case of 12"
+  },
+  {
+    "id": "p45",
+    "name": "Disposable Plastic Gloves & White Paper Napkins",
+    "category": 4,
+    "pack": "Bulk Bundles"
+  },
+  {
+    "id": "p46",
+    "name": "Brown Kraft Paper Shopping Bag with Twisted Handle - Medium",
+    "category": 5,
+    "pack": "Pack of 250 pcs"
+  },
+  {
+    "id": "p47",
+    "name": "Brown Kraft Paper Shopping Bag with Twisted Handle - Large",
+    "category": 5,
+    "pack": "Pack of 250 pcs"
+  },
+  {
+    "id": "p48",
+    "name": "Economical Flat-Handle Kraft Delivery Paper Bag",
+    "category": 5,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p49",
+    "name": "White Kraft Premium Boutique Bag with Rope Handle",
+    "category": 5,
+    "pack": "Pack of 250 pcs"
+  },
+  {
+    "id": "p50",
+    "name": "SOS Gusseted Grocery Paper Bag without Handles",
+    "category": 5,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p51",
+    "name": "Certified Bio-Compostable Cornstarch D-Cut Carry Bags",
+    "category": 5,
+    "pack": "Pack of 500 pcs"
+  },
+  {
+    "id": "p52",
+    "name": "Birchwood Wooden Spoons (160mm)",
+    "category": 6,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p53",
+    "name": "Birchwood Wooden Forks (160mm)",
+    "category": 6,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p54",
+    "name": "Pre-Packed Wooden Cutlery Kits (Wood Spoon + Fork + Tissue in Eco Pouch)",
+    "category": 6,
+    "pack": "Pack of 500 sets"
+  },
+  {
+    "id": "p55",
+    "name": "Single-Wall & Ripple-Wall Hot Paper Cups (150ml & 250ml)",
+    "category": 6,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p56",
+    "name": "Heavy Paper Drinking Straws - 6mm & 8mm Boba/Shake Size",
+    "category": 6,
+    "pack": "Pack of 1,000 pcs"
+  },
+  {
+    "id": "p57",
+    "name": "10-Inch & 12-Inch Round Areca Palm Leaf Heavy Dinner Plates",
+    "category": 6,
+    "pack": "Pack of 200 pcs"
+  }
+]
