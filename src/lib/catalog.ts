@@ -16,7 +16,8 @@ export const categories = [
  { id:6, name:'Cutlery & Tableware', short:'Cutlery & Tableware', description:'The finishing touch to every meal', image:cutlery, material:'Wood / paper / palm leaf', tags:['Biodegradable','Food Grade'], sub:['Wooden cutlery','Cups & straws','Palm leaf plates'] },
 ];
 export const products = data.map(p => {
- const c=categories.find(c=>c.id===p.category) ?? categories[0];
+ const c=categories.find(c=>c.id===p.category);
+ if(!c)throw new Error(`Unknown category ${p.category}`);
  let material=c.material;
  if(p.category===4) material=/PP|Plastic|Bento|Cling|Gloves/i.test(p.name)?'Standard plastic':/Aluminium/i.test(p.name)?'Aluminium':'Paper';
  return {...p, image:c.image, material, tags:c.tags};
