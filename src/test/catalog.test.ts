@@ -12,3 +12,6 @@ describe('Wholesale catalog rules',()=>{
  it('requires outlet name and location for samples',()=>{expect(requestSchema.safeParse({outlet:'',location:'Roorkee'}).success).toBe(false);expect(requestSchema.safeParse({outlet:'Cafe',location:''}).success).toBe(false);});
  it('routes every WhatsApp action to the owner-supplied business number',()=>{expect(businessWhatsAppNumber).toBe('917310710532');expect(businessWhatsAppDisplay).toBe('+91 73107 10532');expect(whatsappUrl('Hello')).toBe('https://wa.me/917310710532?text=Hello');expect(whatsappUrl(quoteMessage([{id:'p1',quantity:3}],'Haridwar'))).toContain('https://wa.me/917310710532?text=');});
 });
+describe('Size variants',()=>{
+ it('groups 250/500/750/1000ml PP containers into one product with 4 sizes',()=>{const {productGroups}=require('@/lib/catalog');const g=productGroups.find((g:any)=>g.variants.some((v:any)=>v.id==='p33'));expect(g.variants.map((v:any)=>v.id)).toEqual(['p31','p32','p33','p34']);});
+});

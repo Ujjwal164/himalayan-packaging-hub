@@ -4,7 +4,7 @@ import { Mountain, Leaf, Search, ShoppingBag, Menu, ChevronDown, ArrowUpRight, M
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { categories, products, updateQuote, quoteMessage, whatsappUrl, requestSchema, deliveryLocations, businessWhatsAppNumber, businessWhatsAppDisplay, generalEnquiryMessage, type QuoteItem, type Product } from '@/lib/catalog';
+import { categories, products, updateQuote, quoteMessage, whatsappUrl, requestSchema, deliveryLocations, businessWhatsAppNumber, businessWhatsAppDisplay, generalEnquiryMessage, type QuoteItem, type Product, type ProductGroup, sizeLabel } from '@/lib/catalog';
 
 type StoreState={items:QuoteItem[];add:(id:string)=>void;openQuote:()=>void;openSample:(product?:string)=>void;openWhatsApp:()=>void};
 const StoreContext=createContext<StoreState|null>(null);
