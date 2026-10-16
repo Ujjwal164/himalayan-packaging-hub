@@ -1,5 +1,5 @@
 import { describe,it,expect } from 'vitest';
-import { products,filterProducts,updateQuote,quoteMessage,wholesalePolicy,requestSchema,whatsappUrl,businessWhatsAppNumber,businessWhatsAppDisplay } from '@/lib/catalog';
+import { products,filterProducts,updateQuote,quoteMessage,wholesalePolicy,requestSchema,whatsappUrl,businessWhatsAppNumber,businessWhatsAppDisplay,productGroups } from '@/lib/catalog';
 describe('Wholesale catalog rules',()=>{
  it('includes all 57 products in the six specified categories',()=>{expect(products).toHaveLength(57);expect([1,2,3,4,5,6].map(c=>products.filter(p=>p.category===c).length)).toEqual([12,9,9,15,6,6]);});
  it('uses the specified 500-piece pack for 650ml bagasse bowls',()=>{expect(products.find(p=>p.name.startsWith('650ml Round Bagasse'))?.pack).toBe('Pack of 500 pcs');});
@@ -13,5 +13,5 @@ describe('Wholesale catalog rules',()=>{
  it('routes every WhatsApp action to the owner-supplied business number',()=>{expect(businessWhatsAppNumber).toBe('917310710532');expect(businessWhatsAppDisplay).toBe('+91 73107 10532');expect(whatsappUrl('Hello')).toBe('https://wa.me/917310710532?text=Hello');expect(whatsappUrl(quoteMessage([{id:'p1',quantity:3}],'Haridwar'))).toContain('https://wa.me/917310710532?text=');});
 });
 describe('Size variants',()=>{
- it('groups 250/500/750/1000ml PP containers into one product with 4 sizes',()=>{const {productGroups}=require('@/lib/catalog');const g=productGroups.find((g:any)=>g.variants.some((v:any)=>v.id==='p33'));expect(g.variants.map((v:any)=>v.id)).toEqual(['p31','p32','p33','p34']);});
+ it('groups 250/500/750/1000ml PP containers into one product with 4 sizes',()=>{const g=productGroups.find((g:any)=>g.variants.some((v:any)=>v.id==='p33'));expect(g.variants.map((v:any)=>v.id)).toEqual(['p31','p32','p33','p34']);});
 });
