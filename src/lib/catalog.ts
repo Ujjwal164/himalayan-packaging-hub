@@ -6,6 +6,8 @@ import standard from '@/assets/category-4.jpg';
 import bags from '@/assets/category-5.jpg';
 import cutlery from '@/assets/category-6.jpg';
 import { z } from 'zod';
+const productImages=import.meta.glob<string>('@/assets/products/*.jpg',{eager:true,import:'default'});
+const imageFor=(id:string)=>Object.entries(productImages).find(([k])=>k.endsWith(`/${id}.jpg`))?.[1];
 
 export const categories = [
  { id:1, name:'Sugarcane Bagasse', short:'Bagasse Containers', description:'Naturally better food packaging', image:bagasse, material:'Sugarcane bagasse', tags:['Compostable','Microwave Safe'], sub:['Round bowls','Meal prep boxes','Clamshells','Compartment trays'] },
@@ -20,7 +22,7 @@ export const products = data.map(p => {
  if(!c)throw new Error(`Unknown category ${p.category}`);
  let material=c.material;
  if(p.category===4) material=/PP|Plastic|Bento|Cling|Gloves/i.test(p.name)?'Standard plastic':/Aluminium/i.test(p.name)?'Aluminium':'Paper';
- return {...p, image:c.image, material, tags:c.tags};
+ return {...p, image:c.image as string, material, tags:c.tags};
 });
 export type Product = typeof products[number];
 export type QuoteItem = {id:string; quantity:number};
@@ -64,9 +66,9 @@ export type ProductGroup={id:string;name:string;variants:Product[]};
 export const productGroups:ProductGroup[]=[];
 for(const p of products){
  const g=variantGroups.find(g=>g.ids.includes(p.id));
- if(!g){productGroups.push({id:p.id,name:p.name,variants:[p]});continue}
+ if(!g){productGroups.push({id:p.id,name:p.name,variants:[{...p,image:imageFor(p.id)??p.image}]});continue}
  if(g.ids[0]!==p.id)continue;
- productGroups.push({id:p.id,name:g.name,variants:g.ids.map(id=>products.find(x=>x.id===id)!)});
+ productGroups.push({id:p.id,name:g.name,variants:g.ids.map(id=>{const v=products.find(x=>x.id===id)!;return {...v,image:imageFor(g.ids[0]!)??v.image}})});
 }
 export function filterGroups(query:string,category:number,kind:string){
  const ids=new Set(filterProducts(query,category,kind).map(p=>p.id));
